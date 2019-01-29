@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>{{election}}</title>
+	</head>
+	<table>
+	{% for position in positions %}
+		<tr>
+			<td >{{ position["name"] }}</td>
+			<td >{{ position["winner"] }}</td>
+		</tr>
+	{% endfor %}
+	</table>
+</html>
